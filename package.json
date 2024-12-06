@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-myconnection": "^1.0.4",
+    "mysql2": "^3.11.5",
+    "pkg": "^5.8.1"
+  },
+  "name": "sitederers",
+  "version": "1.0.0",
+  "main": "contact.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

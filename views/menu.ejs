@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Restaurant - Menu</title>
+    <link rel="stylesheet" href="css/restau.css">
+</head>
+<body>
+    <header>
+        <h1>Menu de Mon Restaurant</h1>
+        <nav>
+            <ul>
+              
+                <%- include("navbar") -%>
+              
+            </ul>
+        </nav>
+    </header>
+    <section id="menu"></section>
+    <% plats.forEach(plat => { %>
+        <div class="plat">
+            <h3><%= plat.nom %></h3>
+            <p>Prix : <%= plat.prix %> €</p>
+        </div>
+        <img src="<%= plat.image %>" alt="<%= plat.nom %>" />
+    <% }) %>
+
+</section>
+<%- include("footer") -%>
+      
+</body>
+</html>

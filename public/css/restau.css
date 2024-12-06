@@ -1,0 +1,124 @@
+/* Style général du corps de la page */
+body {
+    font-family: Arial, sans-serif; /* Police de caractères utilisée */
+    margin: 0; /* Supprime la marge par défaut */
+    padding: 0; /* Supprime le remplissage par défaut */
+    background-image: url('une-vue-incroyable-panoramique.jpg'); /* Image de fond */
+}
+
+/* Style pour l'en-tête */
+header {
+    background-color: #2ed497; /* Couleur de fond de l'en-tête */
+    color: white; /* Couleur du texte */
+    padding: 10px 0; /* Espacement intérieur en haut et en bas */
+    text-align: center; /* Centre le texte */
+}
+
+/* Style pour la navigation */
+nav ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime le remplissage par défaut */
+}
+
+nav ul li {
+    display: inline; /* Affiche les éléments de la liste en ligne */
+    margin: 0 15px; /* Marge à gauche et à droite */
+}
+
+nav ul li a {
+    color: white; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+/* Style pour les sections */
+section {
+    padding: 20px; /* Espacement intérieur de la section */
+}
+
+/* Style pour le pied de page */
+footer {
+    text-align: center; /* Centre le texte */
+    padding: 10px 0; /* Espacement intérieur en haut et en bas */
+    background-color: #4CAF50; /* Couleur de fond du pied de page */
+    color: white; /* Couleur du texte */
+    position: relative; /* Position relative pour le positionnement */
+    bottom: 0; /* Positionne le pied de page en bas */
+    width: 100%; /* Largeur à 100% */
+}
+ul a {
+    color: white; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+/* Style pour les classes plat et membre */
+.plat {
+    text-align: center; /* Centre le texte */
+    border: solid black 5px; /* Bordure en haut avec une largeur de 1px */
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    background-color: #45a049;
+}
+.membre {
+    color: rgb(154, 50, 224);
+    border: solid black;
+    background-color: aquamarine;
+    text-align: center;
+    border-radius: 10px;
+   
+}
+
+.info {
+    background: linear-gradient(90deg, rgb(227, 187, 25),rgb(12, 51, 209));
+    line-height: 0.1;
+    border: solid red;
+    border-radius: 10px;
+}
+
+/* Style pour les titres de niveau 2 */
+h2 {
+    text-align: center;
+    color: rgb(189, 53, 53); /* Centre le texte */
+}
+
+/* Style pour les formulaires */
+form {
+    display: flex; /* Utilise le modèle de boîte flexible */
+    flex-direction: column; /* Aligne les éléments en colonne */
+}
+
+/* Style pour les étiquettes de formulaire */
+form label {
+    margin: 10px 0 5px; /* Marge en haut, en bas et à gauche */
+}
+
+/* Style pour les champs de saisie et les zones de texte */
+form input, form textarea {
+    padding: 10px; /* Espacement intérieur */
+    margin-bottom: 10px; /* Marge en bas */
+}
+
+/* Style pour les boutons de formulaire */
+form button {
+    padding: 10px; /* Espacement intérieur */
+    background-color: #4CAF50; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Supprime la bordure par défaut */
+    cursor: pointer; /* Change le curseur au survol */
+}
+
+/* Style pour les boutons au survol */
+form button:hover {
+    background-color: #45a049; /* Change la couleur de fond au survol */
+}
+
+img{
+    display: flex;
+    flex-direction: column; /* Aligne les membres en colonne */
+    align-items: center; /* Centre les membres horizontalement */
+    text-align: center; /* Centre le texte à l'intérieur de chaque membre */
+    margin: 30px; /* Ajoute un espacement entre les membres */
+    max-width: 80%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+    height: auto; /* Garde les proportions de l'image */
+}
+

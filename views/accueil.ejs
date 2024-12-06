@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Restaurant - Accueil</title>
+    <link rel="stylesheet" href="css/restau.css">
+</head>
+<body> 
+   
+    <header>
+        <h1>Bienvenue au CAVERNE</h1>
+        <nav>  
+                <%- include("navbar") -%>
+        </nav>
+    </header>
+    <h2>Liste des Plats</h2>
+    <form>
+        <label for="nomplat">Nom du plat:</label>
+    
+        <input type="text" id="nomplat" name="nomplat" required> <br>
+        
+        <label for="prix">Prix:</label>
+        
+        <input type="number" id="prix" name="prix" required> <br>
+        
+        <button type="submit">Enregistrer</button> 
+    </form>
+    <ul>
+        <% resulat.forEach(plat => { %> <!-- Boucle à travers les résultats -->
+            <li>
+                <h3><%= plat.nom %></h3> <span><%= plat.prix %> € </span>
+                <input type="button" value="Surpprimer" onclick="supprimerDonnees('<%= plat.id %>')">
+                <input type="button" value="Modifier" onclick="remplirDoonnees('<%= plat.id %>','<%= plat.nom %>', '<%= plat.prix%>')"  
+            </li>
+        <% }); %> 
+    </ul>
+        <p>Venez découvrir nos plats faits maison, préparés avec amour et passion. Commandez dès maintenant et savourez le meilleur de la cuisine!</p>
+    </section>
+    <%- include("footer") -%>
+    <script>
+        function remplirDoonnees(id,nom,prix) {
+            document.querySelector("#id").value = id;
+            document.querySelector("#nomplat").value = nom;
+            document.querySelector("#prix").value = prix;
+        }
+
+        function supprimerDonnees (id) {
+            let routeComplete = "plat/" + id;
+
+            fetch(
+                routeComplete, {method : "DELETE"}
+            ).then(
+                (reponse) => response.json()
+            ).then(
+                (donnee) => window.location.href = donnee.routeRacine
+            )
+        }
+    </script>
+</body>
+</html>
