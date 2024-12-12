@@ -154,7 +154,7 @@ app.delete("/plat/:id", (req, res) => {
   });
 });
 
-app.listen(3003, () => {
+app.listen(3002, () => {
     console.log("serveur dispo");
 });
 
